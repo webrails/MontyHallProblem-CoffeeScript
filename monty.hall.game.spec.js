@@ -1,0 +1,13 @@
+describe("MontyHallGame", function() {
+    beforeEach(function() {
+        return this.monty_hall_game = new MontyHallGame();
+    });
+    it("should be instantiable", function() {
+        return expect(this.monty_hall_game).toBeTruthy();
+    });
+    return describe("play", function() {
+        return it("should be a function", function() {
+            return expect(_.isFunction(this.monty_hall_game.play)).toBeTruthy();
+        });
+    });
+});
